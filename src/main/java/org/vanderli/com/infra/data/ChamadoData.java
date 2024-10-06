@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class ChamadoData {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     Long idChamado;
 
     //TODO: Ajustar o tipo dos atributos

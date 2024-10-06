@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 @Table(name = "tb_usuario")
 public class UserData {
 
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Id
     Long idUsuario;
 
