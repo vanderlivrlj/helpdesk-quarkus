@@ -1,22 +1,35 @@
 package org.vanderli.com.infra.data;
 
 import jakarta.persistence.*;
+import org.vanderli.com.domain.enums.StatusChamado;
+
+import java.sql.Timestamp;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "tb_chamado")
 public class ChamadoData {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long idChamado;
 
     //TODO: Ajustar o tipo dos atributos
     String descricaoChamado;
     String tituloChamado;
-    String statusChamado;
+    @Enumerated(EnumType.STRING)
+    StatusChamado statusChamado;
+    Timestamp dataAberturaChamado;
+    Timestamp dataFechamentoChamado;
+    Timestamp dataStatusChamado;
 
-    //TODO: Vincular o chamado a um usuário. O Vínculo deverá ser
-    // tanto para o usuário que abriu como para o técnico responsável pelo atendimento
-    int usuario;
+//    @ManyToOne
+//    @JoinColumn(name = "usuario_solicitante_id")
+//    private UserData usuarioSolicitante;  // Quem abriu o chamado
+//
+//    @ManyToOne
+//    @JoinColumn(name = "tecnico_responsavel_id")
+//    private UserData tecnicoResponsavel;  // Quem Vai atender o chamado
+
 
 }
