@@ -2,9 +2,7 @@ package org.vanderli.com.infra.data;
 
 import jakarta.persistence.*;
 import org.vanderli.com.domain.enums.StatusChamado;
-
 import java.sql.Timestamp;
-import java.time.LocalDate;
 
 @Entity
 @Table(name = "tb_chamado")
@@ -30,6 +28,4 @@ public class ChamadoData {
 //    @ManyToOne
 //    @JoinColumn(name = "tecnico_responsavel_id")
 //    private UserData tecnicoResponsavel;  // Quem Vai atender o chamado
-
-
 }

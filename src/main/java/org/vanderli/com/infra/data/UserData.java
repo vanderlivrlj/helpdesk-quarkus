@@ -16,6 +16,4 @@ public class UserData {
     String setorUsuario;
     String statusUsuario;
     String perfilUsuario;
-
-
 }
