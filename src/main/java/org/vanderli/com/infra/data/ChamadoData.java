@@ -2,6 +2,7 @@ package org.vanderli.com.infra.data;
 
 import jakarta.persistence.*;
 import org.vanderli.com.domain.enums.StatusChamado;
+
 import java.sql.Timestamp;
 
 @Entity
