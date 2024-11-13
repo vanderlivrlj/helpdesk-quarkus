@@ -22,7 +22,7 @@ public class ChamadoEntity {
     StatusChamado statusChamado;
     Timestamp dataAberturaChamado;
     Timestamp dataFechamentoChamado;
-    Timestamp dataStatusChamado;
+    Timestamp dataModificacaoChamado;
 
 //    private UserData usuarioSolicitante;  // Quem abriu o chamado
 //    private UserData tecnicoResponsavel;  // Quem Vai atender o chamado

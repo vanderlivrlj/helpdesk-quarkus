@@ -20,7 +20,7 @@ public class ChamadoData {
     StatusChamado statusChamado;
     Timestamp dataAberturaChamado;
     Timestamp dataFechamentoChamado;
-    Timestamp dataStatusChamado;
+    Timestamp dataModificacaoChamado;
 
 //    @ManyToOne
 //    @JoinColumn(name = "usuario_solicitante_id")
