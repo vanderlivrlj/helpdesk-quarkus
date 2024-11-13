@@ -1,14 +1,12 @@
-package org.vanderli.com.domain.entity;
+package org.vanderli.com.helpdesk.domain.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.vanderli.com.domain.enums.StatusChamado;
-import org.vanderli.com.infra.data.UserData;
+import org.vanderli.com.helpdesk.domain.enums.StatusChamado;
 
 import java.sql.Timestamp;
-import java.time.LocalDate;
 
 @Getter
 @Setter

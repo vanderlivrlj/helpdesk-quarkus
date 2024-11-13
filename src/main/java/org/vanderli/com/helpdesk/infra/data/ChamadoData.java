@@ -1,7 +1,7 @@
-package org.vanderli.com.infra.data;
+package org.vanderli.com.helpdesk.infra.data;
 
 import jakarta.persistence.*;
-import org.vanderli.com.domain.enums.StatusChamado;
+import org.vanderli.com.helpdesk.domain.enums.StatusChamado;
 
 import java.sql.Timestamp;
 

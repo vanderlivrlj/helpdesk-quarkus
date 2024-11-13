@@ -1,4 +1,4 @@
-package org.vanderli.com.presentation.mapper;
+package org.vanderli.com.helpdesk.presentation.mapper;
 
 import org.mapstruct.Mapper;
 

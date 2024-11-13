@@ -1,4 +1,4 @@
-package org.vanderli.com.domain.entity;
+package org.vanderli.com.helpdesk.domain.entity;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

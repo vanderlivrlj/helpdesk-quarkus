@@ -1,4 +1,4 @@
-package org.vanderli.com.domain.enums;
+package org.vanderli.com.helpdesk.domain.enums;
 
 public enum StatusChamado {
 

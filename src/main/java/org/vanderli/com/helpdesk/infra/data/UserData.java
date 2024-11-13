@@ -1,4 +1,4 @@
-package org.vanderli.com.infra.data;
+package org.vanderli.com.helpdesk.infra.data;
 
 import jakarta.persistence.*;
 
