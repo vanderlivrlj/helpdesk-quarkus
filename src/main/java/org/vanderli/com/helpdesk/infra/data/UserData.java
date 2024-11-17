@@ -10,12 +10,15 @@ public class UserData {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    Long idUsuario;
+    private Long idUsuario;
 
     //TODO: Ajustar o tipo dos atributos
-    String nomeUsuario;
-    String emailUsuario;
-    String setorUsuario;
-    StatusUsuarioEnum statusUsuario;
-    PerfilUsuarioEnum perfilUsuario;
+    private String nomeUsuario;
+    private String emailUsuario;
+    @ManyToOne
+    @JoinColumn(name = "idSetor")
+    private SetorData setorUsuario;
+    private StatusUsuarioEnum statusUsuario;
+    private PerfilUsuarioEnum perfilUsuario;
+
 }
