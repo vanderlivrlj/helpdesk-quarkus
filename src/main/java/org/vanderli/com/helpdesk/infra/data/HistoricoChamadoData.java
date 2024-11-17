@@ -13,9 +13,6 @@ public class HistoricoChamadoData {
     @ManyToOne
     @JoinColumn(name = "idChamado")
     private ChamadoData chamado; // Relacionamento com o chamado
-    @ManyToOne
-    @JoinColumn(name = "idUsuario")
-    private UserData usuario; // Usuário que fez a alteração
     private String descricaoAlteracao;
     private LocalDateTime dataAlteracao;
 }

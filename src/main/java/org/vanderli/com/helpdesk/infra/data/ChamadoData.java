@@ -18,10 +18,6 @@ public class ChamadoData {
     @Enumerated(EnumType.STRING)
     private StatusChamadoEnum statusChamado;
     @ManyToOne
-    private UserData usuarioCriado;
-    @ManyToOne
-    private UserData usuarioResponsavel;
-    @ManyToOne
     private CategoriaChamadoData categoriaChamado;
     private LocalDateTime dataAberturaChamado;
     private LocalDateTime dataFechamentoChamado;
