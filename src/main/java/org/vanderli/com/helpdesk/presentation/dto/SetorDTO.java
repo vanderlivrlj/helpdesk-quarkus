@@ -1,4 +1,4 @@
-package org.vanderli.com.helpdesk.domain.entity;
+package org.vanderli.com.helpdesk.presentation.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,11 +9,9 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Setor {
-
+public class SetorDTO {
     private Long idSetor;
     private String nomeSetor;
     private String descricaoSetor;
     private String localizcaoSetor;
-
 }
