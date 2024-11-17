@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.vanderli.com.helpdesk.domain.enums.PerfilUsuarioEnum;
+import org.vanderli.com.helpdesk.domain.enums.StatusUsuarioEnum;
 
 @Getter
 @Setter
@@ -16,6 +18,6 @@ public class UserEntity {
     String nomeUsuario;
     String emailUsuario;
     String setorUsuario;
-    String statusUsuario;
-    String perfilUsuario;
+    StatusUsuarioEnum statusUsuario;
+    PerfilUsuarioEnum perfilUsuario;
 }

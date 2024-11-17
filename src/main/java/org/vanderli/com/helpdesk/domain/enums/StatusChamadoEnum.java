@@ -1,6 +1,6 @@
 package org.vanderli.com.helpdesk.domain.enums;
 
-public enum StatusChamado {
+public enum StatusChamadoEnum {
 
     ABERTO,
     FECHADO,

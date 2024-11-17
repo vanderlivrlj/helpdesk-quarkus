@@ -1,7 +1,7 @@
 package org.vanderli.com.helpdesk.infra.data;
 
 import jakarta.persistence.*;
-import org.vanderli.com.helpdesk.domain.enums.StatusChamado;
+import org.vanderli.com.helpdesk.domain.enums.StatusChamadoEnum;
 
 import java.sql.Timestamp;
 
@@ -17,7 +17,7 @@ public class ChamadoData {
     String descricaoChamado;
     String tituloChamado;
     @Enumerated(EnumType.STRING)
-    StatusChamado statusChamado;
+    StatusChamadoEnum statusChamado;
     Timestamp dataAberturaChamado;
     Timestamp dataFechamentoChamado;
     Timestamp dataModificacaoChamado;

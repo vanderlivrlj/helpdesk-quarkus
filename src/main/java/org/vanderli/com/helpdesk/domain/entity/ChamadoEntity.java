@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.vanderli.com.helpdesk.domain.enums.StatusChamado;
+import org.vanderli.com.helpdesk.domain.enums.StatusChamadoEnum;
 
 import java.sql.Timestamp;
 
@@ -19,7 +19,7 @@ public class ChamadoEntity {
     //TODO: Ajustar o tipo dos atributos
     String descricaoChamado;
     String tituloChamado;
-    StatusChamado statusChamado;
+    StatusChamadoEnum statusChamado;
     Timestamp dataAberturaChamado;
     Timestamp dataFechamentoChamado;
     Timestamp dataModificacaoChamado;

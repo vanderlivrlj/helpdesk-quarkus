@@ -1,6 +1,8 @@
 package org.vanderli.com.helpdesk.infra.data;
 
 import jakarta.persistence.*;
+import org.vanderli.com.helpdesk.domain.enums.PerfilUsuarioEnum;
+import org.vanderli.com.helpdesk.domain.enums.StatusUsuarioEnum;
 
 @Entity
 @Table(name = "tb_usuario")
@@ -14,6 +16,6 @@ public class UserData {
     String nomeUsuario;
     String emailUsuario;
     String setorUsuario;
-    String statusUsuario;
-    String perfilUsuario;
+    StatusUsuarioEnum statusUsuario;
+    PerfilUsuarioEnum perfilUsuario;
 }
