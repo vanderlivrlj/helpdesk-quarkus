@@ -15,6 +15,7 @@ public class ChamadoData {
     //TODO: Ajustar o tipo dos atributos
     private String descricaoChamado;
     private String tituloChamado;
+    private Long idUsuario;
     @Enumerated(EnumType.STRING)
     private StatusChamadoEnum statusChamado;
     @ManyToOne
