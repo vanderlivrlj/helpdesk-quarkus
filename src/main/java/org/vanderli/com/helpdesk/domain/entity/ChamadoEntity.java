@@ -1,5 +1,7 @@
 package org.vanderli.com.helpdesk.domain.entity;
 
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,7 +29,7 @@ public class ChamadoEntity {
     private StatusChamadoEnum statusChamado;
     private LocalDateTime dataAberturaChamado;
     private LocalDateTime dataFechamentoChamado;
-    private LocalDateTime dataModificacaoChamado;
+    //private LocalDateTime dataModificacaoChamado;
 
 //    private UserData usuarioSolicitante;  // Quem abriu o chamado
 //    private UserData tecnicoResponsavel;  // Quem Vai atender o chamado

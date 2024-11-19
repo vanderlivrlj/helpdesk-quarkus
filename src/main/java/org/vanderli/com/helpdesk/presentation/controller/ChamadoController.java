@@ -8,8 +8,10 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import org.vanderli.com.helpdesk.domain.entity.ChamadoEntity;
 import org.vanderli.com.helpdesk.domain.service.ChamadoService;
 import org.vanderli.com.helpdesk.presentation.dto.ChamadoDTO;
+import org.vanderli.com.helpdesk.presentation.dto.CriarChamadoDTO;
 
 @Path("/chamados")
 @Consumes(MediaType.APPLICATION_JSON)
@@ -21,11 +23,10 @@ public class ChamadoController {
     ChamadoService chamadoService;
 
     @POST
-    public Response criarChamado(ChamadoDTO dto) {
-        ChamadoDTO chamado = chamadoService.criarChamado(dto);
+    public Response criarChamado(CriarChamadoDTO dto) {
+        ChamadoDTO chamadoDTO = chamadoService.criarChamado(dto);
         return Response.status(Response.Status.CREATED)
-                .entity(chamado)
+                .entity(chamadoDTO)
                 .build();
     }
-
 }
