@@ -47,6 +47,21 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-rest-client-jackson</artifactId>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>io.quarkus</groupId>-->
+<!--            <artifactId>quarkus-resteasy-jackson</artifactId>-->
+<!--            <version>3.15.1</version> &lt;!&ndash; Versão Quarkus 2.x.x &ndash;&gt;-->
+<!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/io.quarkus/quarkus-resteasy-reactive-jackson -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-resteasy-reactive-jackson</artifactId>
+            <version>3.15.0</version>
+        </dependency>
+
+
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-junit5</artifactId>
@@ -122,6 +137,8 @@
             <version>1.17.5</version>
             <scope>test</scope>
         </dependency>
+
+
     </dependencies>
 
     <build>
@@ -193,7 +210,7 @@
             <properties>
                 <skipITs>false</skipITs>
                 <quarkus.native.enabled>true</quarkus.native.enabled>
-                <quarkus.platform.version>3.15.0</quarkus.platform.version>
+                <quarkus.platform.version>3.16.2</quarkus.platform.version>
                 <quarkus.plugin.version>3.2.0.Final</quarkus.plugin.version>
             </properties>
         </profile>
