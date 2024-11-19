@@ -9,12 +9,12 @@ import jakarta.ws.rs.core.MediaType;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 import org.vanderli.com.helpdesk.presentation.dto.UserDTO;
 
-@RegisterRestClient(configKey = "customer-api")
-@ApplicationScoped
+//@RegisterRestClient(configKey = "customer-api")
+//@ApplicationScoped
 public interface CustomerClient {
 
-    @GET
-    @Path("/usuarios/{id}")
-    @Produces(MediaType.APPLICATION_JSON)
-    UserDTO getUsuarioById(@PathParam("id") Long id);
+//    @GET
+//    @Path("/usuarios/{id}")
+//    @Produces(MediaType.APPLICATION_JSON)
+//    UserDTO getUsuarioById(@PathParam("id") Long id);
 }
